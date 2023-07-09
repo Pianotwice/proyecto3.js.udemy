@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juego de preguntas</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos/estilos.css">
+        <script src="scripts/scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <div class="title-container">
+                <div class="title-background"></div>
+                    <h1 class="text-center">Juego de preguntas</h1>
+            </div>
+
+            <div id="preguntas" style="display: none;">
+                <form id="formulario">
+                    <div class="mb-3">
+                        <label for="respuesta1" class="form-label">Pregunta 1: ¿Quién es el protagonidsta de Dragon Ball Z?</label>
+                        <input type="text" class="form-control" id="respuesta1" placeholder="Respuesta 1" required>
+                    </div>
+                     <div class="mb-3">
+                        <label for="respuesta2" class="form-label">Pregunta 2: ¿Cuál es la técnica más poderosa de Gokú?</label>
+                        <input type="text" class="form-control" id="respuesta2" placeholder="Respuesta 2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="respuesta3" class="form-label">Pregunta 3: ¿Quién es el mejor amigo de Gokú?</label>
+                        <input type="text" class="form-control" id="respuesta3" placeholder="Respuesta 3" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="respuesta4" class="form-label">Pregunta 4: ¿Cuál es la raza de Vegeta?</label>
+                        <input type="text" class="form-control" id="respuesta4" placeholder="Respuesta 4" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="respuesta5" class="form-label">Pregunta 5: ¿Cuál es el enemigo principal de Dragon Ball Z?</label>
+                        <input type="text" class="form-control" id="respuesta5" placeholder="Respuesta 5" required>
+                    </div>
+                </form>
+            </div>
+
+            <div id="tiempo">
+            <span id="segundos">30</span> segundos
+            </div>
+
+            <div class="d-grid gap-2">
+                <button id="comenzar" class="btn btn-primary btn-lg" onclick="comenzarJuego()">Comenzar</button>
+                <div id="botones">
+                    <button id="reiniciar" class="btn btn-danger" onclick="reiniciarJuego()" style="display: none;">Reiniciar</button>
+                    <button id="entregar" class="btn btn-success" onclick="verificarRespuestas()" style="display: none;">Finalizar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

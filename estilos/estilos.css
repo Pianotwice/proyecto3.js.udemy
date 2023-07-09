@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rock+Salt&family=Rubik+80s+Fade&display=swap');
+
+/*
+font-family: 'Bungee Shade', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Rubik 80s Fade', cursive;
+*/
+
+body{
+    background-image: url(../imgs/goku-ss.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Rubik 80s Fade', cursive;
+    color:rgb(241, 234, 241);
+}
+
+.container {
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/* Agregamos estilo del contenedor del título */
+.title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+/* Agregamos estilo del fondo semi transparente */
+.title-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de la transparencia aquí */
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.text-center {
+    position: relative; /* Permite que el título esté por encima del fondo */
+    font-family: 'Rock Salt', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: goldenrod;
+    text-transform: uppercase;
+    z-index: 2; /* Asegura que el texto esté por encima del fondo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: perspective(100px) rotateX(10 deg)
+  }
+
+#preguntas {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    font-family:'Rock Salt', cursive;
+    color: goldenrod;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: perspective(100px) rotateX(10 deg)
+}
+
+#respuesta1,
+#respuesta2, 
+#respuesta3, 
+#respuesta4, 
+#respuesta5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+#comenzar {
+    width: 500px;
+    height: 350px;
+    background-image: url('https://i.pinimg.com/564x/6f/4d/73/6f4d73d1afc0702a6e9d31f36d1628bc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+    font-family:'Bungee Shade', cursive;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: perspective(100px) rotateX(10 deg);
+    
+    cursor: pointer;
+}
+
+  #botones {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+  }

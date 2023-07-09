@@ -1,0 +1,31 @@
+<!-- Crear sitio web de 1 sola página en que se otorgue solo 30 segundos para 
+    responder a 5 preguntas, si el usuario no logra hacerlo dentro debe aparecer 
+    una alerta GAME OVER y va a tener que reiniciar el juego para volver a 
+    intentarlo, pero si lo logra va a presionar un botón para confirmar y el 
+    navegador va a mostrar un alerta con la fecha actual y la lista de respuestas +
+    respondidas -->
+
+<!-- De contar con cuenta regresiva de 30 a 0 segundos, 5 preguntas y 5 inputs para
+    permitir al usuario responder, debe tener 2 botones, uno para envisar las 
+    respuestas al terminar y otro para reiniciar la página, respecto al estilo se 
+    puede agregar un enlace a un documento .css (pero en este caso es totalmente 
+    opcional), y en cuanto a javascript se van a necesitar unas cuantas funciones, 
+    1 que se encargue de mostrar los 30 segundos iniciales y de llamar a 2 funciones 
+    más: 1 que va a determinar qué va a suceder al cumplirse el tiempo y otra para 
+    cambiar los segundos restantes cada 1 segundo; luego se temdrá que crear otra 
+    función que se active cuando el usuario presione el bontón de confirmación y que 
+    se va a encrgar de mostrar la fecha y las respuestas y otro botón que haga 
+    exactamente eso, reiniciar el sitio-->
+
+<!-- Para que funcione el reinicio del sitio es necesario aprender la interfaz 
+    location, esta representa la ubicación UDL, y aplicar el metodo .reload() para 
+    volver a cargar, y finalmente para mostrar la fecha día, mes, año, los recursos 
+    que se han aprendido, los objetos DATE o FECHA, tienen elementos que pueden 
+    facilitar mucho esto: 
+
+    let miFecha = new Date();
+    miFecha.toLocaleDateString('es-ES'); 
+
+    Este método se acomoda a la región donde se está escribiendo y el es-ES es 
+    simplemente avisar que el estilo de presentación de fecha tiene que ser como 
+    se hace en el español de España: día, mes y año--> 
