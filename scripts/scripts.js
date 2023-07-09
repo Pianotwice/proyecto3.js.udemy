@@ -13,6 +13,13 @@ function comenzarJuego() {
     actualizarTemporizador();
     temporizador = setInterval(actualizarTemporizador, 1000);
 
+    reproducirSonidoInicio();
+
+}
+
+function reproducirSonidoInicio() {
+    let audioInicio = document.getElementById("audio-start");
+    audioInicio.play();
 }
 
 // Esto actualizará el temporizador
@@ -31,7 +38,13 @@ function actualizarTemporizador() {
 // Mostramos la alerta "GAME OVER"
 function mostrarGameOver() {
     alert("GAME OVER");
+    reproducirSonidoGameOver();
     reiniciarJuego();
+}
+
+function reproducirSonidoGameOver() {
+    let audioGameOver = document.getElementById("audio-gameover");
+    audioGameOver.play();
 }
 
 function verificarRespuestas() {
